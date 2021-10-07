@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    line-height: 1;
+    background: linear-gradient(#FF4800, #FFB600);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.feature_class {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.feature_class:last-child {
+    border-bottom: none;
+}
+
+.feature_image {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 0px;
+    max-width: 100%;
+}
+
+.feature_header {
+    color: #FF4800;
+    font-family: Candara;
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.features_list {
+    margin: 50px 0 25px;
+    color: #FF6D00;
+}
+
+.feature {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
+}
+
+.feature:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.price {
+    color: #FF9E00;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.paid, .sign_up {
+    border: 1px solid white;
+    border-radius: 10px;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 15px 35px;
+    font-weight: bold;
+    margin: 15px;
+    text-decoration: none;
+    background-color: #FF4800;
+}
+
+.sign_up:hover, .sign_up:focus, .paid:hover, .paid:focus {
+    background-color: #FF9100;
+}
+
+@media (min-width: 900px) {
+    .main {
+        flex-direction: row;
+    }
+    .feature_class {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+    .feature_class:last-child {
+        border-right: none;
+    }
+}
